@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Limitless - Animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background-color: black;
+            padding: 10px;
+        }
+        nav button {
+            background-color: lightsteelblue;
+            color: black;;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: dodgerblue;
+        }
+        a {
+            color: lightsteelblue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: dodgerblue;
+        }
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #FFD701;
+        }
+        p, ul, ol {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        ul, ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        video {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <button onclick="showPage('pagina1')">Página Principal</button>
+        <button onclick="showPage('pagina2')">Dragon Ball</button>
+        <button onclick="showPage('pagina3')">Pokémon</button>
+        <button onclick="showPage('pagina4')">Top 10 Animes</button>
+        <button onclick="showPage('pagina5')">Melhores Animes</button>
+    </nav>
+
+    <section id="pagina1" class="page active">
+        <h1>Limitless</h1>
+        <p>Bem-vindo! Aqui você encontrará várias informações sobre anime, séries e jogos.</p>
+    </p> Tópicos: </p>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showPage('pagina2')">Dragon Ball</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('pagina3')">Pokémon</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('pagina4')">Top 10 Animes Mais Aguardados</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('pagina5')">Top 10 Melhores Animes (MyAnimeList)</a></li>
+        </ul>
+    </section>
+
+    <section id="pagina2" class="page">
+        <h1>Dragon Ball</h1>
+        <p><a href="javascript:void(0);" onclick="showPage('pagina1')">Voltar para a página principal</a></p>
+        <h2>Sinopse</h2>
+        <p>Dragon Ball, uma das séries de anime e mangá mais icônicas de todos os tempos, nasceu da mente criativa de Akira Toriyama em 1984. A história acompanha a jornada de Son Goku, um jovem guerreiro de origem alienígena, em sua busca pelas lendárias Esferas do Dragão, capazes de realizar qualquer desejo. Ao longo de sua aventura, Goku conhece amigos, enfrenta inimigos poderosos e se torna um dos guerreiros mais fortes do universo.</p>
+        <h3>1. Saga do Dragão (Dragon Ball)</h3>
+        <p>Na primeira fase da série, conhecemos Goku ainda criança, vivendo aventuras ao lado de personagens como Bulma, Mestre Kame, e Yamcha. Durante essa fase, Goku enfrenta vilões como o exército Red Ribbon e o Rei Piccolo, começando sua jornada de auto-aperfeiçoamento.</p>
+        <h3>2. Saga Z (Dragon Ball Z)</h3>
+        <p>Dragon Ball Z é a fase mais popular da franquia e introduz os Saiyajins, a raça guerreira de Goku. Ao longo das sagas de Freeza, Cell e Majin Boo, Goku atinge novas formas de poder, como o Super Saiyajin, e luta ao lado de aliados como Vegeta, Gohan e Piccolo. Esta fase é marcada por batalhas épicas e novos conceitos de poder.</p>
+        <h3>3. Dragon Ball Super</h3>
+        <p>Em *Dragon Ball Super*, Goku e seus amigos enfrentam ameaças cósmicas, como Beerus, o Deus da Destruição, e entram em contato com o Multiverso. Esta fase introduz o Super Saiyajin Deus e o Ultra Instinto, além de apresentar novos universos e torneios entre deuses.</p>
+        <h3>4. Dragon Ball GT (Não Canônico)</h3>
+        <p>Embora não seja considerado parte do cânone oficial, *Dragon Ball GT* continua a história após *Dragon Ball Z*, mostrando Goku em uma jornada pelo espaço ao lado de sua neta Pan e Trunks. GT traz a transformação Super Saiyajin 4 e vilões como Baby e Omega Shenlong.</p>
+        <h3>5. Dragon Ball Heroes (Baseado no Jogo)</h3>
+        <p>*Dragon Ball Heroes* é uma série promocional baseada no jogo de cartas do mesmo nome. Com histórias paralelas e não canônicas, Heroes explora fusões inusitadas, vilões de diferentes dimensões, e versões alternativas dos personagens.</p>
+        <h3>História nos Jogos</h3>
+        <p>Desde o final dos anos 80, *Dragon Ball* possui uma forte presença no mundo dos videogames. Os primeiros jogos foram lançados para o Famicom e o Super Nintendo, seguindo com títulos para diversas plataformas. Jogos como *Dragon Ball Z: Budokai*, *Dragon Ball Z: Budokai Tenkaichi*, e *Dragon Ball FighterZ* são aclamados pelos fãs por recriarem batalhas icônicas e introduzirem novos modos de jogo.</p>
+        <video width="640" height="360" controls>
+            <source src="video/Dragon Ball Z  - Abertura 1° - Chala Head Chala em Portugues - BR.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="pagina3" class="page">
+        <h1>Pokémon</h1>
+        <p><a href="javascript:void(0);" onclick="showPage('pagina1')">Voltar para a página principal</a></p>
+        <h2>História</h2>
+        <p>Criado em 1996 pela empresa japonesa Nintendo, em parceria com a Game Freak e a Creatures, Pokémon rapidamente se tornou um dos maiores fenômenos da cultura pop mundial. A franquia começou como um jogo para o Game Boy, onde o jogador assumia o papel de um "Treinador Pokémon", capturando e treinando criaturas conhecidas como Pokémon para se tornar o maior Mestre Pokémon. A partir de então, a franquia se expandiu para o anime, filmes, jogos de cartas, brinquedos e muito mais.</p>
+        <h3>Números</h3>
+        <p>Desde o seu lançamento, Pokémon vendeu mais de 400 milhões de cópias de jogos, tornando-se uma das franquias de videogame mais vendidas da história. A marca também conta com uma das maiores coleções de mercadorias licenciadas, incluindo mais de 20 filmes animados, quase 30 temporadas do anime e um número impressionante de cartas colecionáveis que são vendidas e trocadas mundialmente.</p>
+        <h3>História do Anime</h3>
+        <p>O anime de Pokémon conta a história de um menino de 10 anos, chamado Ash Ketchum, que sonha em se tornar o maior Mestre Pokémon. Ele começa sua jornada na cidade de Pallet com seu primeiro Pokémon, Pikachu, e juntos eles viajam pelo mundo Pokémon, enfrentando desafios, capturando novos Pokémon e competindo em torneios. O anime evoluiu junto com os jogos, apresentando novas regiões e Pokémon a cada temporada.</p>
+        <h3>Curiosidades</h3>
+        <ul>
+            <li>No primeiro episódio do anime, Ash vê um Pokémon lendário chamado Ho-Oh, que só foi revelado oficialmente nos jogos anos depois.</li>
+            <li>Pikachu não era a primeira escolha para ser o mascote da franquia. Inicialmente, Clefairy era o favorito, mas Pikachu foi escolhido por ser mais chamativo e por seu apelo universal.</li>
+            <li>Existem atualmente mais de 1000 espécies diferentes de Pokémon, com novos sendo adicionados a cada geração de jogos.</li>
+            <li>O jogo Pokémon GO, lançado em 2016, gerou uma febre mundial ao misturar realidade aumentada com a possibilidade de capturar Pokémon no mundo real.</li>
+            <li>Pokémon é oficialmente a franquia de mídia mais lucrativa de todos os tempos, ultrapassando até mesmo marcas como Star Wars e Marvel.</li>
+        </ul>
+        <video width="640" height="360" controls>
+            <source src="video/Pokémon - Abertura - 1ª temporada.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="pagina4" class="page">
+        <h1>Top 10 Animes Mais Aguardados</h1>
+        <p>Aqui estão os 10 animes mais aguardados de Outubro:</p>
+        <ol>
+            <li>Tower of God S2</li>
+            <li>Re:Zero 3º Temporada</li>
+            <li>Dandadan</li>
+            <li>Dragon Ball Daima</li>
+            <li>Ao no Exorcist III parte 2</li>
+            <li>Bleach: Sennen Kessen-hen</li>
+            <li>Shangri-La Frontier</li>
+            <li>Mokushiroku no Yonkishi II</li>
+            <li>Houkago Shounen Hanako-kun II</li>
+            <li>Blue Box</li>
+        </ol>
+        <div>
+            <img src="img/animes outubro.jpg" alt="Animes aguardados 2024" style="width: 300px; height: auto; border-radius: 8px;">
+        </div>
+    </section>
+
+    <section id="pagina5" class="page">
+        <h1>Top 10 Melhores Animes (MyAnimeList)</h1>
+        <ol>
+            <li>Sousou no Frieren</li>
+            <li>One Piece Fan Letter</li>
+            <li>Fullmetal Alchemist: Brotherhood</li>
+            <li>Steins;Gate</li>
+            <li>Shingeki no Kyojin Season 3 Part 2</li>
+            <li>Gintama°</li>
+            <li>Gintama: The Final</li>
+            <li>Gintama'</li>
+            <li>Hunter x Hunter (2011)</li>
+            <li>Gintama': Enchousen</li>
+        </ol>
+        <div>
+            <img src="img/frieren.jpg" alt="Animes aguardados 2024" style="width: 300px; height: auto; border-radius: 8px;">
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
